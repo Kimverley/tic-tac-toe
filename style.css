@@ -1,0 +1,90 @@
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+text-align: center;
+background:  #a3c1b1;
+min-height: 100vh;
+}
+
+.game-container {
+padding-top: 40px;
+}
+
+h1 {
+
+font-size: 56px;
+margin-bottom: 10px;
+}
+
+h2 {
+
+margin: 10px 0;
+}
+
+.board-wrap {
+   
+position: relative;
+width: fit-content;
+margin: 25px auto;
+}
+
+#board {
+border-collapse: collapse;
+}
+
+td {
+width: 120px;
+height: 120px;
+border: 3px solid #a3c1b1;
+background-color: #f2fcf2;
+font-size: 62px;
+font-weight: bold;
+text-align: center;
+vertical-align: middle;
+cursor: pointer;
+}
+
+td:hover {
+transition: transform 0.2s ease-in;
+
+}
+
+.x-cell {
+color: #1d3557;
+}
+
+.o-cell {
+color: #d62839;
+}
+
+#message {
+min-height: 40px;
+margin-top: 15px;
+}
+
+button {
+margin-top: 10px;
+padding: 14px 28px;
+font-size: 18px;
+border: none;
+border-radius: 8px;
+background-color: white;
+color: #3b6049;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #dff6ff;
+}
+
+#winLine {
+position: absolute;
+background-color: #ff2e2e;
+height: 8px;
+width: 0;
+left: 0;
+top: 0;
+border-radius: 10px;
+display: none;
+}
